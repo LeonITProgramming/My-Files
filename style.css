@@ -29,6 +29,7 @@ header>span{
 
 .menu{
 	float: right;	
+	margin-right: 15vw;
 }
 
 .categories{
@@ -38,8 +39,8 @@ header>span{
 	padding-right: 10px;
 	float: left;
 	padding-left: 10px;
-	height: 40px;
 	display: inline-block;
+	cursor: pointer;
 }
 
 .categories::after {
@@ -49,6 +50,7 @@ header>span{
   display: block;
   background: #fff;
   transition: 300ms;
+  margin-top: -27px;
 }
 
 .categories:hover::after {
@@ -63,7 +65,24 @@ header>span{
 	margin-right: 10px;
 	float: left;
 	margin-left: 10px;
+	display: inline-block;
+	cursor: pointer;
 }
+
+.gal::after {
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: #fff;
+  transition: 300ms;
+  margin-top: -27px;
+}
+
+.gal:hover::after {
+  width: 100%;
+}
+
 
 .cont{
 	color: #fff;
@@ -72,7 +91,25 @@ header>span{
 	margin-right: 10px;
 	float: left;
 	margin-left: 10px;
+	display: inline-block;
+	cursor: pointer;
 }
+
+.cont::after {
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: #fff;
+  transition: 300ms;
+  margin-top: -27px;
+}
+
+.cont:hover::after {
+  width: 100%;
+}
+
+
 
 .lin{
 	float: left;
@@ -80,4 +117,53 @@ header>span{
 	height: 30px;
 	background-color: silver;
 	margin-top: 10px;
+}
+
+.phone{
+	color: #fff;
+	font-family: 'Baloo Tammudu 2', cursive;
+	font-size: 25px;
+	margin-right: 10px;
+	float: left;
+	margin-left: 10px;
+	display: inline-block;
+	cursor: pointer;
+	float: right;
+}
+
+.phone>a{
+	font-size: 30px;
+	text-decoration: none;
+	color: #fff;
+
+}
+
+.phone::after {
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: #fff;
+  transition: 300ms;
+  margin-top: -27px;
+
+}
+
+.phone:hover::after {
+  width: 100%;
+}
+
+.phone:hover>a {
+  color: #FE393A;
+}
+.fa-user{
+	font-size: 25px;
+	color: #fff;
+	margin-top: 13px;
+	float: right;
+
+}
+
+.fa-user:hover{
+	color: #FE393A;
 }
